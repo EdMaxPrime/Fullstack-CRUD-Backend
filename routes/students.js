@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { Student } = require("../database/models");
 
-router.post("/add", function(req, res, next) {
+router.put("/add", function(req, res, next) {
   let jsonified = req.body;
   Student.create(jsonified)
     .then(obj => res.send(obj))
@@ -28,7 +28,7 @@ router.post("/edit", function(req, res, next) {
   res.send("?????????");
 });
 
-router.post("/delete", function(req, res, next) {
+router.delete("/delete", function(req, res, next) {
   Student.destroy({
     where: {
       id: req.body.id
