@@ -25,7 +25,7 @@ const Student = db.define("student", {
   },
   image: {
     type: Sequelize.STRING,
-    allowNull: false,
+    allowNull: true,
     defaultValue: ""
   }
 });

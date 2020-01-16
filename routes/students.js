@@ -17,7 +17,8 @@ router.post("/edit", function(req, res, next) {
       lastName: jsonified.lastName,
       GPA: jsonified.GPA,
       email: jsonified.email,
-      image: jsonified.image
+      image: jsonified.image,
+      campusId: jsonified.campusId
     },
     {
       where: {
