@@ -4,7 +4,7 @@ const { Campus } = require("../database/models");
 
 router.get("/", function(req, res, next) {
   Campus.findAll()
-    .then(campuses => res.json(students))
+    .then(campuses => res.json(campuses))
     .catch(err => console.log(err));
 });
 
