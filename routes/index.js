@@ -1,11 +1,13 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
 // Subrouters;
-const playersRouter = require('./players');
+const studentsRouter = require("./students");
+const campusesRouter = require("./campuses");
 
 // Mount our subrouters to assemble our apiRouter;
-router.use('/players', playersRouter);
+router.use("/students", studentsRouter);
+router.use("/campuses", campusesRouter);
 
 // Error handling middleware;
 router.use((req, res, next) => {
