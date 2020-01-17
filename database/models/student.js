@@ -21,7 +21,10 @@ const Student = db.define("student", {
   },
   email: {
     type: Sequelize.STRING,
-    allowNull: false
+    allowNull: false,
+    validate: {
+      isEmail: true
+    }
   },
   image: {
     type: Sequelize.STRING,
