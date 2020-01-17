@@ -13,7 +13,11 @@ router.put("/add", function(req, res, next) {
     campusId: jsonified.campusId
   })
     .then(obj => res.send(obj))
-    .catch(err => res.send(err));
+    .catch(err => {
+      //res.send(err.errors[0].message);
+      res.send("This email is not valid, please enter a valid one");
+      res.status(501);
+    });
 });
 
 router.post("/edit", function(req, res, next) {
