@@ -28,8 +28,8 @@ const seedDatabase = async () => {
       campusId: 1
     }),
     Student.create({
-      firstName: "Kyrie",
-      lastName: "Irving",
+      firstName: "John",
+      lastName: "Doe",
       GPA: "4.0",
       email: "gammastunt@gmail.com",
       image:
