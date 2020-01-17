@@ -21,7 +21,7 @@ const seedDatabase = async () => {
     Student.create({
       firstName: "Kyrie",
       lastName: "Irving",
-      GPA: "2.2",
+      GPA: 2.2,
       email: "xshi603@gmail.com",
       image:
         "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
@@ -30,7 +30,7 @@ const seedDatabase = async () => {
     Student.create({
       firstName: "John",
       lastName: "Doe",
-      GPA: "4.0",
+      GPA: 4.0,
       email: "gammastunt@gmail.com",
       image:
         "http://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9",

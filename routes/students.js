@@ -39,17 +39,19 @@ router.post("/edit", function(req, res, next) {
   )
     .then(obj => res.send(obj))
     .catch(err => res.send(err));
+
+  console.log(req.body);
 });
 
 router.delete("/delete", function(req, res, next) {
   Student.destroy({
     where: {
       id: req.body.id
+      //id: parseInt(req)
     }
-  })
-    .then(obj => res.send(obj))
-    .catch(err => res.send(err));
-  res.send("Deleted");
+  });
+  console.log(req.header);
+  res.send(req.id);
 });
 
 router.get("/", function(req, res, next) {
